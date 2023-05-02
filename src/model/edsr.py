@@ -62,7 +62,7 @@ class EDSR(nn.Module):
         x = self.tail(res)
         x = self.add_mean(x)
 
-        return x 
+        return res, x 
 
     def load_state_dict(self, state_dict, strict=True):
         own_state = self.state_dict()

@@ -8,8 +8,10 @@ import torch
 import torch.nn.utils as utils
 from tqdm import tqdm
 
+from loss import at
+
 class Trainer():
-    def __init__(self, args, loader, my_model, my_loss, ckp):
+    def __init__(self, args, loader, my_model, my_loss, ckp, teacher_model, kd_loss):
         self.args = args
         self.scale = args.scale
 
@@ -18,6 +20,8 @@ class Trainer():
         self.loader_test = loader.loader_test
         self.model = my_model
         self.loss = my_loss
+        self.KD_loss = kd_loss
+        self.t_model = teacher_model
         self.optimizer = utility.make_optimizer(args, self.model)
 
         if self.args.load != '':
@@ -45,8 +49,10 @@ class Trainer():
             timer_model.tic()
 
             self.optimizer.zero_grad()
-            sr = self.model(lr, 0)
-            loss = self.loss(sr, hr)
+            res, sr = self.model(lr, 0)
+            t_res, _ = self.t_model(lr, 0)
+            kd_loss = self.KD_loss(res, t_res)
+            loss = self.loss(sr, hr) + 0.1*kd_loss
             loss.backward()
             if self.args.gclip > 0:
                 utils.clip_grad_value_(
@@ -88,7 +94,7 @@ class Trainer():
                 d.dataset.set_scale(idx_scale)
                 for lr, hr, filename in tqdm(d, ncols=80):
                     lr, hr = self.prepare(lr, hr)
-                    sr = self.model(lr, idx_scale)
+                    _, sr = self.model(lr, idx_scale)
                     sr = utility.quantize(sr, self.args.rgb_range)
 
                     save_list = [sr]
@@ -132,9 +138,9 @@ class Trainer():
         if self.args.cpu:
             device = torch.device('cpu')
         else:
-            if torch.backends.mps.is_available():
-                device = torch.device('mps')
-            elif torch.cuda.is_available():
+            #if torch.backends.mps.is_available():
+            #    device = torch.device('mps')
+            if torch.cuda.is_available():
                 device = torch.device('cuda')
             else:
                 device = torch.device('cpu')
