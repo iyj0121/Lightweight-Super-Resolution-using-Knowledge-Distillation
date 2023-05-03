@@ -15,7 +15,8 @@ checkpoint = utility.checkpoint(args)
 check = utility.checkpoint(args)
 
 teacher_model = model.Model(args, check)
-teacher_model.load_state_dict(torch.load('/home/iyj0121/EDSR-PyTorch/experiment/EDSR_x2.pt'), strict=False)
+#teacher_model.load_state_dict(torch.load('/home/iyj0121/AT_EDSR/model_best.pt'), strict=False)
+teacher_model.load(apath='/home/iyj0121/AT_EDSR/')
 teacher_model.eval()
 
 def main():
