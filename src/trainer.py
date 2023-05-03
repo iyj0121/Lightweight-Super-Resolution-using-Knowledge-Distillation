@@ -52,7 +52,7 @@ class Trainer():
             res, sr = self.model(lr, 0)
             t_res, _ = self.t_model(lr, 0)
             kd_loss = self.KD_loss(res, t_res)
-            loss = self.loss(sr, hr) + 0.1*kd_loss
+            loss = self.loss(sr, hr) + 0.01*kd_loss
             loss.backward()
             if self.args.gclip > 0:
                 utils.clip_grad_value_(
