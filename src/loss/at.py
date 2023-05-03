@@ -27,7 +27,7 @@ class AT(nn.Module):
 	def attention_map(self, fm, eps=1e-6):
 		am = torch.pow(torch.abs(fm), self.p)
 		am = torch.sum(am, dim=1, keepdim=True)
-		#norm = torch.norm(am, keepdim=True)#, dim=(2,3)
-		#am = torch.div(am, norm+eps)
+		norm = torch.norm(am, keepdim=True)#, dim=(2,3)
+		am = torch.div(am, norm+eps)
 
 		return am

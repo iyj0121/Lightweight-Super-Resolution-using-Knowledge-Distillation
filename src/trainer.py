@@ -8,8 +8,6 @@ import torch
 import torch.nn.utils as utils
 from tqdm import tqdm
 
-from loss import at
-
 class Trainer():
     def __init__(self, args, loader, my_model, my_loss, ckp, teacher_model, kd_loss):
         self.args = args
@@ -53,7 +51,7 @@ class Trainer():
             with torch.no_grad():
                 t_res, _ = self.t_model(lr, 0)
             kd_loss = self.KD_loss(res, t_res)
-            loss = self.loss(sr, hr) + 0.0001*kd_loss
+            loss = self.loss(sr, hr) + 0.1*kd_loss
             loss.backward()
             if self.args.gclip > 0:
                 utils.clip_grad_value_(
