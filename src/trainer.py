@@ -48,10 +48,10 @@ class Trainer():
 
             self.optimizer.zero_grad()
             res, sr = self.model(lr, 0)
-            with torch.no_grad():
-                t_res, _ = self.t_model(lr, 0)
+            #with torch.no_grad():
+            t_res, _ = self.t_model(lr, 0)
             kd_loss = self.KD_loss(res, t_res)
-            loss = self.loss(sr, hr) + 0.1*kd_loss
+            loss = self.loss(sr, hr) + kd_loss
             loss.backward()
             if self.args.gclip > 0:
                 utils.clip_grad_value_(
