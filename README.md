@@ -12,11 +12,10 @@
 
 This repository는 **"Enhanced Deep Residual Networks for Single Image Super-Resolution"** from **CVPRW 2017, 2nd NTIRE**.[here](https://github.com/LimBee/NTIRE2017) EDSR모델을 **"Paying More Attention to Attention: Improving the Performance of Convolutional Neural Networks via Attention Transfer"** from **ICLR2017: https://openreview.net/forum?id=Sks9_ajex** [here](https://arxiv.org/abs/1612.03928) 방식을 활용하여 모델 경량화를 진행하려고 한다.
 
-<img width="834" alt="스크린샷 2023-05-08 오후 6 35 06" src="https://user-images.githubusercontent.com/90498398/236798239-85baa08e-fd66-49ea-acc2-aa07c482110e.png">
+<img width="668" alt="스크린샷 2023-05-15 오후 12 20 36" src="https://github.com/iyj0121/Junior-Project/assets/90498398/2c785b6c-3d95-44f4-b34c-fff634339564">
 
 중간 실험 결과
-학생 모델과 교사 모델로 부터 지식을 받은 ours 모델은 patch_size=96, n_resblocks=16, epochs=100, batch_size=8으로 진행함.
-교사 모델은 patch_size=96, n_resblocks=32, epochs=300, batch_size=16으로 진행함.
+AT의 하이퍼파라미터를 1.0으로 했을 때, 결과. 오히려 지식 증류를 받은게 더 성능이 떨어짐.
 
 [1] Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, and Kyoung Mu Lee, **"Enhanced Deep Residual Networks for Single Image Super-Resolution,"** <i>2nd NTIRE: New Trends in Image Restoration and Enhancement workshop and challenge on image super-resolution in conjunction with **CVPR 2017**. </i> [[PDF](http://openaccess.thecvf.com/content_cvpr_2017_workshops/w12/papers/Lim_Enhanced_Deep_Residual_CVPR_2017_paper.pdf)] [[arXiv](https://arxiv.org/abs/1707.02921)] [[Slide](https://cv.snu.ac.kr/research/EDSR/Presentation_v3(release).pptx)]
 ```
