@@ -48,8 +48,8 @@ AT의 하이퍼파라미터를 1.0으로 했을 때, 결과. 오히려 지식 �
 ## Code
 Clone this repository into any place you want.
 ```bash
-git clone https://github.com/thstkdgus35/EDSR-PyTorch
-cd EDSR-PyTorch
+git clone git@git.ajou.ac.kr:iyj0121/lightweight-super-resolution-using-knowledge-distillation.git
+cd lightweight-super-resolution-using-knowledge-distillation
 ```
 
 ## Quickstart (Demo)
