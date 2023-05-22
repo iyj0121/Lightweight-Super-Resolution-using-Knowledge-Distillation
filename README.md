@@ -1,10 +1,10 @@
 **About PyTorch 1.6.0**
   * Now the main branch supports PyTorch 1.6.0 by default.
 
-# Attention transfer을 활용한 EDSR-PyTorch모델 경량화
+# knowledge distillation을 활용한 EDSR-PyTorch모델 경량화
 
 **About PyTorch 1.6.0**
-  * feature map transfer 방식을 위에서 언급한 EDSR에 적용하여 모델 경량화 실험 진행 예정
+  * feature map transfer 방식 등, KD에서 사용하는 방식으로 EDSR에 적용하여 모델 경량화 실험 진행 예정
 
 
 ![스크린샷_2023-05-03_오후_8.07.38](/uploads/ea0da2b1a3e3b2ae50c7043ca4c7a633/스크린샷_2023-05-03_오후_8.07.38.png)
@@ -16,6 +16,14 @@ This repository는 **"Enhanced Deep Residual Networks for Single Image Super-Res
 
 중간 실험 결과
 AT의 하이퍼파라미터를 1.0으로 했을 때, 결과. 오히려 지식 증류를 받은게 더 성능이 떨어짐.
+
+<img width="670" alt="스크린샷 2023-05-22 오후 9 53 37" src="https://github.com/iyj0121/Junior-Project/assets/90498398/d9865cb6-7d21-4e6d-8af5-2bba43474837">
+
+<img width="670" alt="스크린샷 2023-05-18 오전 1 35 53" src="https://github.com/iyj0121/Junior-Project/assets/90498398/00e1da90-3713-4b62-b060-4b54dc1bb8ec">
+
+<img width="681" alt="스크린샷 2023-05-18 오전 1 35 35" src="https://github.com/iyj0121/Junior-Project/assets/90498398/bd3eb6c3-65c1-4db3-aeaa-2482ef92508f">
+
+KD방식이 아닌 pruning 등 다른 방식으로 모델 경량화를 이어나갈 예정.
 
 [1] Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, and Kyoung Mu Lee, **"Enhanced Deep Residual Networks for Single Image Super-Resolution,"** <i>2nd NTIRE: New Trends in Image Restoration and Enhancement workshop and challenge on image super-resolution in conjunction with **CVPR 2017**. </i> [[PDF](http://openaccess.thecvf.com/content_cvpr_2017_workshops/w12/papers/Lim_Enhanced_Deep_Residual_CVPR_2017_paper.pdf)] [[arXiv](https://arxiv.org/abs/1707.02921)] [[Slide](https://cv.snu.ac.kr/research/EDSR/Presentation_v3(release).pptx)]
 ```
