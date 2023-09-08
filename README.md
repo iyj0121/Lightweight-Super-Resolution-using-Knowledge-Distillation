@@ -23,6 +23,10 @@ AT의 하이퍼파라미터를 1.0으로 했을 때, 결과. 오히려 지식 �
 
 <img width="681" alt="스크린샷 2023-05-18 오전 1 35 35" src="https://github.com/iyj0121/Junior-Project/assets/90498398/bd3eb6c3-65c1-4db3-aeaa-2482ef92508f">
 
+최종 실험 결과
+
+<img width="613" alt="최종결과" src="https://github.com/iyj0121/Junior-Project/assets/90498398/2ad8a281-a9cf-4d92-9838-abdae32b7ddd">
+
 KD방식이 아닌 pruning 등 다른 방식으로 모델 경량화를 이어나갈 예정.
 
 [1] Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, and Kyoung Mu Lee, **"Enhanced Deep Residual Networks for Single Image Super-Resolution,"** <i>2nd NTIRE: New Trends in Image Restoration and Enhancement workshop and challenge on image super-resolution in conjunction with **CVPR 2017**. </i> [[PDF](http://openaccess.thecvf.com/content_cvpr_2017_workshops/w12/papers/Lim_Enhanced_Deep_Residual_CVPR_2017_paper.pdf)] [[arXiv](https://arxiv.org/abs/1707.02921)] [[Slide](https://cv.snu.ac.kr/research/EDSR/Presentation_v3(release).pptx)]
