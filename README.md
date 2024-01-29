@@ -25,7 +25,7 @@ AT의 하이퍼파라미터를 1.0으로 했을 때, 결과. 오히려 지식 �
 
 최종 실험 결과
 
-<img width="613" alt="최종결과" src="https://github.com/iyj0121/Junior-Project/assets/90498398/2ad8a281-a9cf-4d92-9838-abdae32b7ddd">
+<img width="613" alt="그림1555" src="https://github.com/iyj0121/Classification_android_APP/assets/90498398/e0aad6b5-0079-4df5-906c-7a7a3cf9abfe">
 
 KD방식이 아닌 pruning 등 다른 방식으로 모델 경량화를 이어나갈 예정.
 
