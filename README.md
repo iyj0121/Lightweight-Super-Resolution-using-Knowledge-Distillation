@@ -4,7 +4,7 @@
 # knowledge distillation을 활용한 EDSR-PyTorch모델 경량화
 
 **About PyTorch 1.6.0**
-  * feature map transfer 방식 등, KD에서 사용하는 방식으로 EDSR에 적용하여 모델 경량화 실험 진행 예정
+  * feature map transfer 방식 등, KD에서 사용하는 방식으로 EDSR에 적용하여 모델 경량화 실험 진행
 
 <img width="580" alt="스크린샷 2024-01-29 오후 9 50 02" src="https://github.com/iyj0121/DataBase_Project/assets/90498398/2044e07b-6c3c-4265-be0a-9c8527c1db43">
 
