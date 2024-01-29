@@ -12,16 +12,16 @@
 
 This repository는 **"Enhanced Deep Residual Networks for Single Image Super-Resolution"** from **CVPRW 2017, 2nd NTIRE**.[here](https://github.com/LimBee/NTIRE2017) EDSR모델을 **"Paying More Attention to Attention: Improving the Performance of Convolutional Neural Networks via Attention Transfer"** from **ICLR2017: https://openreview.net/forum?id=Sks9_ajex** [here](https://arxiv.org/abs/1612.03928) 방식을 활용하여 모델 경량화를 진행하려고 한다.
 
-<img width="668" alt="스크린샷 2023-05-15 오후 12 20 36" src="https://github.com/iyj0121/Junior-Project/assets/90498398/2c785b6c-3d95-44f4-b34c-fff634339564">
+<img width="687" alt="스크린샷 2023-05-18 오전 1 35 21" src="https://github.com/sanghyun-son/EDSR-PyTorch/assets/90498398/305aa921-23ea-449c-8974-e556c1e2cb4d">
 
 중간 실험 결과
 AT의 하이퍼파라미터를 1.0으로 했을 때, 결과. 오히려 지식 증류를 받은게 더 성능이 떨어짐.
 
-<img width="670" alt="스크린샷 2023-05-22 오후 9 53 37" src="https://github.com/iyj0121/Junior-Project/assets/90498398/d9865cb6-7d21-4e6d-8af5-2bba43474837">
+<img width="681" alt="스크린샷 2023-05-18 오전 1 35 35" src="https://github.com/sanghyun-son/EDSR-PyTorch/assets/90498398/64e98b71-bf18-4b01-a802-4705e9aec223">
 
-<img width="670" alt="스크린샷 2023-05-18 오전 1 35 53" src="https://github.com/iyj0121/Junior-Project/assets/90498398/00e1da90-3713-4b62-b060-4b54dc1bb8ec">
+<img width="670" alt="스크린샷 2023-05-18 오전 1 35 53" src="https://github.com/sanghyun-son/EDSR-PyTorch/assets/90498398/c6e5a7eb-87b7-4aa7-b04c-f53e726a9699">
 
-<img width="681" alt="스크린샷 2023-05-18 오전 1 35 35" src="https://github.com/iyj0121/Junior-Project/assets/90498398/bd3eb6c3-65c1-4db3-aeaa-2482ef92508f">
+<img width="670" alt="스크린샷 2023-05-22 오후 9 53 37" src="https://github.com/sanghyun-son/EDSR-PyTorch/assets/90498398/56f524af-4d6a-4fc2-9399-2c9ba5adfe44">
 
 최종 실험 결과
 
