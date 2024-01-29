@@ -6,9 +6,9 @@
 **About PyTorch 1.6.0**
   * feature map transfer 방식 등, KD에서 사용하는 방식으로 EDSR에 적용하여 모델 경량화 실험 진행 예정
 
+<img width="580" alt="스크린샷 2024-01-29 오후 9 50 02" src="https://github.com/iyj0121/DataBase_Project/assets/90498398/2044e07b-6c3c-4265-be0a-9c8527c1db43">
 
-![스크린샷_2023-05-03_오후_8.07.38](/uploads/ea0da2b1a3e3b2ae50c7043ca4c7a633/스크린샷_2023-05-03_오후_8.07.38.png)
-![그림1](/uploads/70deee4757ab0a0395c4d50ececbb6d6/그림1.png)
+<img width="936" alt="스크린샷 2024-01-29 오후 9 50 14" src="https://github.com/iyj0121/DataBase_Project/assets/90498398/ef4c0659-dae1-4e4e-9195-6498083f6e7b">
 
 This repository는 **"Enhanced Deep Residual Networks for Single Image Super-Resolution"** from **CVPRW 2017, 2nd NTIRE**.[here](https://github.com/LimBee/NTIRE2017) EDSR모델을 **"Paying More Attention to Attention: Improving the Performance of Convolutional Neural Networks via Attention Transfer"** from **ICLR2017: https://openreview.net/forum?id=Sks9_ajex** [here](https://arxiv.org/abs/1612.03928) 방식을 활용하여 모델 경량화를 진행하려고 한다.
 
